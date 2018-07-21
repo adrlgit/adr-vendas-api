@@ -5,13 +5,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-/*Mapeamento de entidade*/
+//Mapeamento de entidade
 @Entity
 public class Cliente {
 
-	/*Identificador '@id' e Estratégia de Geração de chave,
-	estamos dizendo que o banco de dados gere nossa cheve
-	 primária '@GeneratedValue' */
+	//Identificador '@id' e Estratégia de Geração de chave,
+	//estamos dizendo que o banco de dados gere nossa cheve
+	// primária '@GeneratedValue'
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

@@ -24,9 +24,10 @@ public class Venda {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private LocalDateTime cadasrto;
+	private LocalDateTime cadastro;
 	
 	//Posso ter várias vendas para um mesmo cliente @ManyToOne
+	
 	@ManyToOne
 	private Cliente cliente;
 	
@@ -49,12 +50,12 @@ public class Venda {
 		this.id = id;
 	}
 
-	public LocalDateTime getCadasrto() {
-		return cadasrto;
+	public LocalDateTime getCadastro() {
+		return cadastro;
 	}
 
-	public void setCadasrto(LocalDateTime cadasrto) {
-		this.cadasrto = cadasrto;
+	public void setCadastro(LocalDateTime cadastro) {
+		this.cadastro = cadastro;
 	}
 
 	public Cliente getCliente() {
